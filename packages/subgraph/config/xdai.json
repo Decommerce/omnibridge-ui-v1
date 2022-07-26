@@ -1,0 +1,48 @@
+{
+  "network": "xdai",
+  "startBlock": "11300566",
+  "omnibridge": "0xf6A78083ca3e2a662D6dd1703c939c8aCE2e268d",
+  "amb": "0x75Df5AF045d91108662D8080fD1FEFAd6aA0bb59",
+  "bridges": [
+    {
+      "name": "OWL",
+      "address": "0xbeD794745e2a0543eE609795ade87A55Bbe935Ba",
+      "startBlock": "11948121"
+    },
+    {
+      "name": "MOON",
+      "address": "0xF75C28fE07E0647B05160288F172ad27CccD8f30",
+      "startBlock": "14285411"
+    },
+    {
+      "name": "HNY",
+      "address": "0x0EeAcdb0Dd96588711581C5f3173dD55841b8e91",
+      "startBlock": "14306413"
+    },
+    {
+      "name": "XDATA",
+      "address": "0x7d55f9981d4E10A193314E001b96f72FCc901e40",
+      "startBlock": "14923817"
+    },
+    {
+      "name": "DATA",
+      "address": "0x53f3F44c434494da73EC44a6E8a8D091332bC2ce",
+      "startBlock": "17894604"
+    },
+    {
+      "name": "AGVE",
+      "address": "0xBE20F60339b06Db32C319d46cf3Bc9bAcC0694aB",
+      "startBlock": "16549014"
+    },
+    {
+      "name": "SWASH",
+      "address": "0x68a64df7458a8eb2677991e657508fe00205332d",
+      "startBlock": "18638013"
+    },
+    {
+      "name": "UDT",
+      "address": "0x5F0FE58709639A39c193521d919aFaef02E570F7",
+      "startBlock": "19318491"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "name": "@omnibridge/ui",
+  "version": "1.0.0",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "subgraph:auth": "yarn workspace @omnibridge/subgraph auth",
+    "subgraph:codegen": "yarn workspace @omnibridge/subgraph codegen",
+    "subgraph:build": "yarn workspace @omnibridge/subgraph build",
+    "subgraph:prepare-kovan": "yarn workspace @omnibridge/subgraph prepare-kovan",
+    "subgraph:deploy-kovan": "yarn workspace @omnibridge/subgraph deploy-kovan",
+    "subgraph:prepare-sokol": "yarn workspace @omnibridge/subgraph prepare-sokol",
+    "subgraph:deploy-sokol": "yarn workspace @omnibridge/subgraph deploy-sokol",
+    "subgraph:prepare-xdai": "yarn workspace @omnibridge/subgraph prepare-xdai",
+    "subgraph:deploy-xdai": "yarn workspace @omnibridge/subgraph deploy-xdai",
+    "subgraph:prepare-mainnet": "yarn workspace @omnibridge/subgraph prepare-mainnet",
+    "subgraph:deploy-mainnet": "yarn workspace @omnibridge/subgraph deploy-mainnet",
+    "subgraph:prepare-xdai-bsc": "yarn workspace @omnibridge/subgraph prepare-xdai-bsc",
+    "subgraph:deploy-xdai-bsc": "yarn workspace @omnibridge/subgraph deploy-xdai-bsc",
+    "subgraph:prepare-bsc-xdai": "yarn workspace @omnibridge/subgraph prepare-bsc-xdai",
+    "subgraph:deploy-bsc-xdai": "yarn workspace @omnibridge/subgraph deploy-bsc-xdai",
+    "subgraph:prepare-mainnet-bsc": "yarn workspace @omnibridge/subgraph prepare-mainnet-bsc",
+    "subgraph:deploy-mainnet-bsc": "yarn workspace @omnibridge/subgraph deploy-mainnet-bsc",
+    "subgraph:prepare-bsc-mainnet": "yarn workspace @omnibridge/subgraph prepare-bsc-mainnet",
+    "subgraph:deploy-bsc-mainnet": "yarn workspace @omnibridge/subgraph deploy-bsc-mainnet",
+    "dapp:build": "yarn workspace @omnibridge/dapp build",
+    "dapp:eject": "yarn workspace @omnibridge/dapp eject",
+    "dapp:start": "yarn workspace @omnibridge/dapp start",
+    "dapp:test": "yarn workspace @omnibridge/dapp test",
+    "dapp:lint": "yarn workspace @omnibridge/dapp lint",
+    "lint": "eslint --ignore-path .gitignore \"./packages/**/*.{ts,tsx,js,jsx}\"",
+    "format": "prettier --ignore-path .gitignore --write \"{*,**/*}.{ts,tsx,js,jsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**/@graphprotocol/graph-ts",
+      "**/@graphprotocol/graph-ts/**"
+    ],
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2"
+  },
+  "license": "UNLICENSED",
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": "prettier --write"
+  },
+  "dependencies": {},
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  }
+}
